@@ -1,0 +1,1 @@
+export { LambdaGraphQLDataSource } from "./LambdaGraphQLDataSource";
