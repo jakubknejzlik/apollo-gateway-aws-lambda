@@ -70,7 +70,7 @@ export class LambdaGraphQLDataSource implements GraphQLDataSource {
 
       const lambdaResponse = await lambda
         .invoke({
-          FunctionName: "graphql-orm-example",
+          FunctionName: this.functionName,
           Payload: JSON.stringify(event, null, 2) // pass params
         })
         .promise();
