@@ -1,4 +1,4 @@
-import { Lambda } from "aws-sdk";
+import Lambda from "aws-sdk/clients/lambda";
 import { GraphQLRequestContext, GraphQLResponse, ValueOrPromise } from "apollo-server-types";
 import { ApolloError } from "apollo-server-errors";
 import { GraphQLDataSource } from "./types";

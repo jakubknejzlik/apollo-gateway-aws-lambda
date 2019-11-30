@@ -11,6 +11,7 @@
     "declaration": true,
     "outDir": "lib",
     "lib": ["esnext", "dom"],
+    "esModuleInterop": true,
     "paths": {
       "*": ["node_modules/*", "src/types/*"]
     }

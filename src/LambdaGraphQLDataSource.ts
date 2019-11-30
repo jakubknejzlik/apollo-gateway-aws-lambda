@@ -1,5 +1,4 @@
-const aws = require("aws-sdk");
-import { Lambda } from "aws-sdk";
+import Lambda from "aws-sdk/clients/lambda";
 const lambda = new Lambda({});
 
 import {
@@ -12,7 +11,7 @@ import {
   AuthenticationError,
   ForbiddenError
 } from "apollo-server-errors";
-import { Request, Headers } from "apollo-server-env";
+import { Headers } from "apollo-server-env";
 import { isObject } from "./predicates";
 import { GraphQLDataSource } from "./types";
 
