@@ -1,5 +1,7 @@
+import { captureAWSClient } from "aws-xray-sdk";
 import Lambda from "aws-sdk/clients/lambda";
-const lambda = new Lambda({});
+
+const lambda = captureAWSClient(new Lambda({}));
 
 import {
   GraphQLRequestContext,

@@ -13,5 +13,8 @@
     "@apollo/gateway": "^0.11.0",
     "@types/aws-sdk": "^2.7.0",
     "aws-sdk": "^2.575.0"
+  },
+  "dependencies": {
+    "aws-xray-sdk": "^2.5.0"
   }
 }
