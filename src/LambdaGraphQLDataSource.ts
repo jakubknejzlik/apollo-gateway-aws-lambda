@@ -62,11 +62,17 @@ export class LambdaGraphQLDataSource implements GraphQLDataSource {
         headers[key] = value;
       }
       const event = {
+        headers,
         body: Buffer.from(JSON.stringify(request)).toString("base64"),
         path: this.path,
         httpMethod: request.http.method,
         isBase64Encoded: true,
-        headers
+        pathParameters: {
+          proxy: this.path
+        },
+        requestContext: {
+          accountId: "dummy"
+        }
       };
 
       const lambdaResponse = await lambda
