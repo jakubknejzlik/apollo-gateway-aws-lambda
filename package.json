@@ -15,6 +15,6 @@
     "aws-sdk": "^2.575.0"
   },
   "dependencies": {
-    "aws-xray-sdk": "^2.5.0"
+    "aws-xray-sdk": "^3.5.0"
   }
 }
